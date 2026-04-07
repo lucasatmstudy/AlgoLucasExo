@@ -1,3 +1,5 @@
+Exercice matin
+
 Exercice 1 : Calculer l’âge à partir de l’année de naissance,
 Ecrire l'algorithme suivant en pseudo-code :
 Stocker l’année de naissance,
@@ -37,3 +39,80 @@ Créer deux variables avec des valeurs différentes,
 2 créer variable b<-nuit
 3 échanger valeur a avec b si a<-jour
 4 échanger valeur b avec a si b<-nuit
+
+-------------------------------------------------------------------
+///////////////////////////////////////////////////////////////////
+-------------------------------------------------------------------
+Exercice après midi
+
+Exercice 1 : Vérifier si une personne est majeure,
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : âge,
+Tester si la personne est majeure,
+Afficher un message adapté selon qu'elle est majeur ou non,
+
+1 créer variable age
+2 demander age
+3 tester age
+4 si age < 18 alors afficher 'mineur' sinon afficher 'majeur'
+
+---------------------------------------------------------------
+
+Exercice 2 : Vérifier un mot de passe simple,
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : mot de passe saisi,
+Comparer avec un mot de passe attendu,
+Afficher succès ou erreur,
+
+Variante :
+Ajouter une condition sur la longueur du mot de passe (au moins 12 caractères),
+
+1 créer variable Mot_de_passe
+2 demander MDP
+3 (variante) Si MDP < 12 caractère alors enregistrement valeur MDP non valide
+  sinon enregistrement valeur MDP valide 
+4 Mot_de_passe <- MDP
+4 demander MDP
+5 vérifier MDP
+6 Si MDP correct afficher 'succès' sinon affiche 'erreur'
+ 
+----------------------------------------------------------------
+
+Exercice 3 : Afficher un message selon une note,
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : note,
+SI la note est supérieure ou égale à 10,
+→ afficher « Admis »
+SINON,
+→ afficher « Refusé »
+
+Variante :
+Ajouter une mention (Très bien, Bien, Passable),
+
+1 créer une note
+2 demander note
+3 si note >== 10 & < 14 afficher 'admis + passable', sinon si note >== 14 & < 18
+afficher 'admis + bien', sinon si note >== 18 afficher 'admis + très bien'
+
+----------------------------------------------------------------
+
+Exercice 4 : Feu tricolore,
+Ecrire un algorithme en pseudo-code pour :
+
+Entrée : couleur du feu,
+Afficher le comportement à adopter :,
+Rouge → Stop,
+Orange → Ralentir,
+Vert → Avancer
+
+1 créer variable rouge
+2 rouge <- couleur1
+3 créer variable organe
+4 orange <- couleur2
+5 créer variable vert
+6 vert <- couleur3
+7 si feu = rouge alors stop, sinon si feu = orange alors ralentir, sinon avancer
+
