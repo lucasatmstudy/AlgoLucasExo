@@ -1,0 +1,39 @@
+Exercice 1 : Calculer l’âge à partir de l’année de naissance,
+Ecrire l'algorithme suivant en pseudo-code :
+Stocker l’année de naissance,
+Stocker l’année actuelle,
+Calculer l’âge,
+Afficher le résultat
+
+1 créer variable a<-annee_naissance
+2 créer variable b<-annee_actuelle
+3 créer variable c<-b-a
+4 afficher c
+
+---------------------------------------------------------
+
+Exercice 2 : Stocker et afficher des informations utilisateur,
+Ecrire l'algorithme suivant en pseudo-code :
+Stocker un prénom,
+Stocker un âge,
+Stocker un statut de connexion,
+Afficher un message avec toutes les informations
+
+1 créer variable a<-prenom
+2 créer variable b<-age
+3 créer variable c<-statut_de_connexion
+4 créer variable d<-a,b,c
+5 afficher d
+
+---------------------------------------------------------
+
+Exercice 3 : Échanger la valeur de deux variables,
+Ecrire un algorithme en pseudo-code pour :
+
+Créer deux variables avec des valeurs différentes,
+Échanger leurs valeurs sans les perdre
+
+1 créer variable a<-jour
+2 créer variable b<-nuit
+3 échanger valeur a avec b si a<-jour
+4 échanger valeur b avec a si b<-nuit
