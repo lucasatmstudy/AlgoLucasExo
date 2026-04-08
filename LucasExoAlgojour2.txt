@@ -113,5 +113,9 @@ Compter le nombre d’éléments
 Afficher le total
 
 T <- [A, B, C, D, E]
-POUR i 
-AFFICHER taille tableau
+Total <- 0
+POUR i de 0 à taille T -1
+	Total <- Total + 1
+FIN POUR
+AFFICHER TOTAL
+
