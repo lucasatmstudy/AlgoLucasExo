@@ -80,7 +80,7 @@ POUR i de 0 à taille de T - 1
 	sommes <- sommes + T [i]
 FIN POUR
 moyenne <- sommes / taille T
-	AFFICHER moyenne
+AFFICHER moyenne
 
 ---------------------------------------------------------------
 
