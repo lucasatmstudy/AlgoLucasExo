@@ -74,12 +74,12 @@ Calculer la somme des notes
 Calculer la moyenne
 Afficher le résultat
 
-créer tableau de notes
+T <- [12, 5, 8, 20]
 sommes <- 0
-POUR i de 0 à taille tableau -1
-	sommes <- sommes + i
+POUR i de 0 à taille de T - 1
+	sommes <- sommes + T [i]
 FIN POUR
-moyenne <- sommes / taille tableau
+moyenne <- sommes / taille T
 	AFFICHER moyenne
 
 ---------------------------------------------------------------
@@ -90,12 +90,19 @@ Créer un tableau de nombres
 Trouver la valeur maximale
 Trouver la valeur minimale
 
-créer tableau de nombre
-max <- [0]
-min <- [0]
-POUR i de 0 à taille tableau -1
-	maximale <- max + i
-		SI maximal
+T <- [8, 5, 12, 20]
+max <- T[0]
+min <- T[0]
+POUR i de 1 à taille T - 1 
+	SI max < T [i]
+		max <- T[i]
+	FIN SI
+	SI min > T [i]
+		min <- T[i]
+	FIN SI
+FIN POUR
+AFFICHER max
+AFFICHER min
 
 ---------------------------------------------------------------
 
@@ -105,5 +112,6 @@ Créer un tableau
 Compter le nombre d’éléments
 Afficher le total
 
-créer tableau
+T <- [A, B, C, D, E]
+POUR i 
 AFFICHER taille tableau
