@@ -1,0 +1,52 @@
+Exercice 1 : Afficher les nombres pairs,
+Consigne :
+Afficher les nombres pairs entre 1 et 20
+
+i <- 1
+TANT QUE i <= 20
+	Si i % 2 = 0 
+		AFFICHER compter
+	Sinon
+		NE PAS AFFICHER compter
+	i <- i + 1
+FIN TANT QUE
+
+-------------------------------------------------------------
+
+Exercice 2 : Compter à rebours
+Consigne :
+Afficher les nombres de 10 à 0
+
+POUR i 10 - 1
+	Afficher compter	
+FIN
+
+-------------------------------------------------------------
+
+Exercice 3 : Simuler un nombre d’essais de connexion
+Consigne :
+L’utilisateur a 3 essais maximum
+Afficher le numéro de l’essai
+Arrêter après le dernier essai
+
+i <- 1
+TANT QUE i <= 3
+	AFFICHER compter
+i <- i + 1
+FIN TANT QUE
+
+--------------------------------------------------------------
+
+Exercice 4 : Table de multiplication
+Consigne :
+Demander un nombre
+Afficher sa table de multiplication de 1 à 10
+
+i <- 0
+créer variable n
+demander n
+n <- nombre
+TANT QUE i <= 10
+	AFFICHER n * i
+i <- i + 1
+FIN TANT QUE
