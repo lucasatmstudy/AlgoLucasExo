@@ -1,0 +1,50 @@
+Exercice 1
+L'erreur est > 18 ans, il faut soit remplacer le > par >=  ou changer le nombre 18 par 17
+
+age <- 16
+SI age >= 18
+	AFFICHER "Majeur"
+SINON
+	AFFICHER "Mineur
+Fin SI
+
+
+Exercice 2
+La fonction POUR n'est pas correctement definie pour un tableau
+l'algorithme remplace somme par la note, sans l'additionner avec la valeur précédente.
+
+notes <- [10, 12, 14]
+somme <- 0
+POUR i de 0 à taille de notes - 1 
+	somme <- somme + notes[i]
+FIN POUR
+moyenne <- somme / 3
+AFFICHER moyenne
+
+
+Exercice 3
+L'algorithme donne un résultat seulement si la note est suppérieur ou égal à 10
+
+note <- 8
+SI note >= 10
+	AFFICHER "Admis"
+SINON
+	AFFICHER "Refusé"
+FIN SI
+
+Exercice 4
+Correction de la fonction POUR comme pour l'exercie 2
+Integrer un message si erreur
+Déplacer l'affiche de la moyenne avent le FIN SI pour qu'il n'apparaisse par lorsqu'il y a une erreur
+
+notes <- []
+somme <- 0
+SI notes != number
+        AFFICHER "Données incorrect"
+SINON
+	POUR i de 0 à taille de notes - 1
+		somme <- somme + notes[i]
+	FIN POUR
+	moyenne <- somme / taille de notes
+	AFFICHER Moyenne
+FIN SI
