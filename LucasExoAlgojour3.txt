@@ -55,7 +55,7 @@ function attribuerMention(moyenne)
         ELSE IF moyenne >= 12 & moyenne < 14
 		RETOURNER "Assez bien"
         ELSE IF moyenne >= 12 & moyenne < 10
-		RETOURNER "Passable
+		RETOURNER "Passable"
 	ELSE IF moyenne < 10 & moyenne >= 0
 		RETOURNER "Insuffisant"
 	ELSE 
