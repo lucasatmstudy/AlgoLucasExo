@@ -20,8 +20,8 @@ DEMANDER prixProduit
 prixProduit <- saisie utilisateur
 TVA <- [2.1, 5.5, 10, 20]
 calculTVA <- calculerTVA(prixProduit, TVA[1])
-total <- prixProduit + prixTVA
-AFFICHER total + prixProduit + calculTVA
+total <- prixProduit + calculTVA
+AFFICHER "total" + "prixProduit" + "calculTVA"
 
 ------------------------------------------------------------------------------------
 
