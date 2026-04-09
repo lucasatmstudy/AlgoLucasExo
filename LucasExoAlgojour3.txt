@@ -1,0 +1,72 @@
+Exercice 1 :  créer un fonction de clacul de TVA
+1 . Créer un fonction 'calculerTVA(prixHT, taux TVA)' qui :
+-Prend en paramètre un prix HT et un taux de TVA
+-Calcule le montant de la TVA
+-Retourne ce montant
+
+2 . Ensuite écrire un algorithme principale qui !
+-Demande un prix HT
+-Demander un taux de TVA
+-Appelle la fonction
+-Affiche le prix TTC (prix HT + TVA)
+
+
+function calculerTVA(prixHT, tauxTVA)
+	prixTVA <- prixHT * tauxTVA / 100
+	Return prixTVA
+FIN
+
+DEMANDER prixProduit
+prixProduit <- saisie utilisateur
+TVA <- [2.1, 5.5, 10, 20]
+calculTVA <- calculerTVA(prixProduit, TVA[1])
+total <- prixProduit + prixTVA
+AFFICHER total + prixProduit + calculTVA
+
+------------------------------------------------------------------------------------
+
+
+Exercice 3 : Composer plusieurs fonctions
+1 . Créer deux fonction :
+	-'calculerMoyenne(note1, note2, note3)' qui retourne la moyenne de 3 notes
+	-'attribuerMention(moyenne)' qui retourne une mention selon la moyenne :
+		+moyenne >= 16 : "très bien
+		+moyenne >= 14 : "Bien"
+		+moyenne >= 12 : "Assez bien"
+		+moyenne >= 10 : "Passable"
+		+moyenne < 10 : "Insufisant"
+
+2 . Ensuite, écrire un algorithme principale qui :
+	-Demande 3 notes
+	-Calcule la moyenne avec la première fonctoin
+	-Obtenir la mention avec la deuxième fonction
+	-Affiche moyenne et mention
+
+function calculerMoyenne(note1, note2, note3)
+	moyenne <- (note1 + note2 + note3)/3
+	RETURN moyenne
+END
+
+function attribuerMention(moyenne)
+	IF moyenne >= 16 & moyenne <= 20
+		AFFICHER "Très bien"
+	ELSE IF moyenne >= 14 & moyenne < 16
+		AFFICHER "Bien"
+        ELSE IF moyenne >= 12 & moyenne < 14
+		AFFICHER "Assez bien"
+        ELSE IF moyenne >= 12 & moyenne < 10
+		AFFICHER "Passable
+	ELSE IF moyenne < 10 & moyenne >= 0
+		AFFICHER "Insuffisant"
+	ELSE 
+		AFFICHER "Données incorrect"
+	END IF
+END
+
+DEMANDER noteA, noteB, noteC
+noteA <- saisie utilisateur
+noteB <- saisie utilisateur
+noteC <- saisie utilisateur
+LaMoyenne <- calculerMoyenne(noteA, noteB, noteC)
+LaMention <- atttribuerMention(LaMention)
+AFFICHER LaMoyenne + LaMention
