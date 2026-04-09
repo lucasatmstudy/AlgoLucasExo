@@ -69,4 +69,4 @@ noteB <- saisie utilisateur
 noteC <- saisie utilisateur
 LaMoyenne <- calculerMoyenne(noteA, noteB, noteC)
 LaMention <- attribuerMention(LaMoyenne)
-AFFICHER LaMoyenne + LaMention
+AFFICHER "LaMoyenne" - "LaMention"
