@@ -49,17 +49,17 @@ END
 
 function attribuerMention(moyenne)
 	IF moyenne >= 16 & moyenne <= 20
-		AFFICHER "Très bien"
+		RETOURNER "Très bien"
 	ELSE IF moyenne >= 14 & moyenne < 16
-		AFFICHER "Bien"
+		RETOURNER "Bien"
         ELSE IF moyenne >= 12 & moyenne < 14
-		AFFICHER "Assez bien"
+		RETOURNER "Assez bien"
         ELSE IF moyenne >= 12 & moyenne < 10
-		AFFICHER "Passable
+		RETOURNER "Passable
 	ELSE IF moyenne < 10 & moyenne >= 0
-		AFFICHER "Insuffisant"
+		RETOURNER "Insuffisant"
 	ELSE 
-		AFFICHER "Données incorrect"
+		RETOURNER "Données incorrect"
 	END IF
 END
 
