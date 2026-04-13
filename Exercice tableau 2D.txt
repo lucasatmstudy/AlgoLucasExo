@@ -9,13 +9,14 @@ morpion <- [
 	[" "," "," "]
 	[" "," "," "]
 ]
-
+//Placer quelques coups (X et O)
 AJOUTER morpion [0][0] <- X
 AJOUTER morpion [0][2] <- O
 AJOUTER morpion [1][1] <- X
 AJOUTER morpion [1][2] <- 0
 AJOUTER morpion [2][2] <- X
 
+//Afficher la grille de manière lisible
 POUR i de 0 à morpion -1
 	pour j de 0 à morpion[i] -1
 		AFFICHER morpion [i][j]
@@ -43,12 +44,14 @@ lycee <- [
 	[note1,note2,note3,note4,note5]
 ]
 
+//Calculer la moyenne d'une classe spécifique
 POUR i de 0 à lycée[0] -1
 somme <- 0
 	sommes <- sommes + lycee[0][i]
 	AFFICHER somme / taille lycee[0]
 FIN
 
+//Calculer la moyenne générale de toutes les classes
 POUR i de 0 à lycée -1
 	POUR j de 0 à lycee[i] -1
 somme <- 0
@@ -70,7 +73,7 @@ Chercher si un nombre spécifique existe dans la grille
 Si oui, afficher sa position (ligne, colonne)
 Si non, afficher "Nombre non trouvé"
 
-
+//Créer un tableau 4×4 de nombres.
 puissancequatre [
 	[15,17,2,13]
 	[20,87,8,0]
@@ -78,6 +81,9 @@ puissancequatre [
 	[14,16,1,19]
 ]
 
+//Chercher si un nombre spécifique existe dans la grille
+//Si oui, afficher sa position (ligne, colonne)
+//Si non, afficher "Nombre non trouvé"
 DEMANDER nombre choisi
 nbrChoisi <- entrée utilisateur
 
