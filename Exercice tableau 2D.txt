@@ -1,0 +1,92 @@
+Exercice 1 : Afficher une grille de morpion
+Créer un tableau 3×3 représentant une grille de morpion.
+Initialiser la grille avec des espaces vides (" ")
+Placer quelques coups (X et O)
+Afficher la grille de manière lisible
+
+morpion <- [
+	[" ", " ", " "]
+	[" ", " ", " "]
+	[" ", " ", " "]
+]
+
+AJOUTER morpion [0][0] <- X
+AJOUTER morpion [0][2] <- O
+AJOUTER morpion [1][1] <- X
+AJOUTER morpion [1][2] <- 0
+AJOUTER morpion [2][2] <- X
+
+POUR i de 0 à morpion -1
+	pour j de 0 à morpion[i] -1
+		AFFICHER morpion [i][j]
+	FIN POUR
+FIN POUR
+FIN
+
+morpion <- [
+	["X"," ","O"]
+	[" ","X","O"]
+	[" "," ","X"]
+]
+
+---------------------------------------------------------------------------
+
+
+Exercice 2 : Notes de plusieurs classes
+Créer un tableau représentant les notes de 3 classes avec 5 élèves chacune.
+Calculer la moyenne d'une classe spécifique
+Calculer la moyenne générale de toutes les classes
+
+lycee <- [
+	[note1,note2,note3,note4,note5]
+	[note1,note2,note3,note4,note5]
+	[note1,note2,note3,note4,note5]
+]
+
+POUR i de 0 à lycée[0] -1
+somme <- 0
+	sommes <- sommes + lycee[0][i]
+	AFFICHER somme / taille lycee[0]
+FIN
+
+POUR i de 0 à lycée -1
+	POUR j de 0 à lycee[i] -1
+somme <- 0
+nombreNote <- 0
+	somme <- somme + lycee[i][j]
+	nombreNote <- nombreNote + 1
+	FIN POUR
+FIN POUR
+	AFFICHER somme / nombreNote
+
+
+-------------------------------------------------------------------------
+
+
+Exercice 3 : Chercher dans une grille
+Consigne :
+Créer un tableau 4×4 de nombres.
+Chercher si un nombre spécifique existe dans la grille
+Si oui, afficher sa position (ligne, colonne)
+Si non, afficher "Nombre non trouvé"
+
+
+puissancequatre [
+	[15,17,2,13]
+	[20,87,8,0]
+	[11,2,13,12]
+	[14,16,1,19]
+]
+
+DEMANDER nombre choisi
+nbrChoisi <- entrée utilisateur
+
+POUR i de 0 à puissancequatre -1
+	POUR j de 0 à puissancequatre[i] -1
+		SI puissancequatre de[i][j] == nbrChoisi
+			AFFICHER [i][j]
+		SINON
+			AFFICHER "nombre non trouvé"
+	FIN POUR
+FIN POUR
+
