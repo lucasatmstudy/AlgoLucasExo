@@ -5,9 +5,9 @@ Placer quelques coups (X et O)
 Afficher la grille de manière lisible
 
 morpion <- [
-	[" ", " ", " "]
-	[" ", " ", " "]
-	[" ", " ", " "]
+	[" "," "," "]
+	[" "," "," "]
+	[" "," "," "]
 ]
 
 AJOUTER morpion [0][0] <- X
