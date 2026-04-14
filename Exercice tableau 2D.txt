@@ -87,10 +87,10 @@ puissancequatre [
 DEMANDER nombre choisi
 nbrChoisi <- entrée utilisateur
 
-POUR i de 0 à puissancequatre -1
+POUR i de 0 à taille puissancequatre -1
 	POUR j de 0 à puissancequatre[i] -1
-		SI puissancequatre de[i][j] == nbrChoisi
-			AFFICHER [i][j]
+		SI puissancequatre[i][j] == nbrChoisi
+			AFFICHER i + j
 		SINON
 			AFFICHER "nombre non trouvé"
 	FIN POUR
