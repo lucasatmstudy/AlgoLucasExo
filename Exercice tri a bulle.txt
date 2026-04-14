@@ -1,0 +1,28 @@
+Exercice 1 : Tri à bulles sur petit tableau
+Soit le tableau : [5, 1, 4, 2, 8]
+Appliquer l'algorithme du tri à bulles manuellement
+Tracer chaque passage complet
+Indiquer tous les échanges effectués
+
+//Il y a 5 index, alors le i max sera 5-2=3 plus ajouter le tour 0 donc 4 tour en tout
+Il ya 5 index donc au premier tour le dernier j sera sur l'index 5-2=3 
+n <- longueur tableau
+POUR i de 0 à taille de n - 2
+	POUR j de 0 à taille de n -2 -i
+
+Premier tour
+[5, 1, 4, 2, 8] i=0 et j=0 <- compare 5 et 1 donc échange
+[1, 5, 4, 2, 8] i=0 et j=1 <- compare 5 et 4 donc échange
+[1, 4, 5, 2, 8] i=0 et j=2 <- compare 5 et 2 donc échange
+[1, 4, 2, 5, 8] i=0 et j=3 <- compare 5 et 8 donc pas d'échange
+Deuxièpe tour
+[1, 4, 2, 5, 8] i=1 et j=0 <- compare 1 et 4 donc pas d'échange
+[1, 4, 2, 5, 8] i=1 et j=1 <- compare 4 et 2 donc échange
+[1, 2, 4, 5, 8] i=1 et j=2 <- compare 4 et 5 donc pas d'échange
+Troisième tour
+[1, 2, 4, 5, 8] i=2 et j=0 <- compare 1 et 2 donc pas d'échange
+[1, 2, 4, 5, 8] i=2 et j=1 <- compare 2 et 4 donc pas d'échange
+Quatrième tour
+[1, 2, 4, 5, 8] i=3 et j=0 <- compare 1 et 2 donc pas d'échange
+
+--------------------------------------------------------------------------
